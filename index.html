@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Words Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Подсчет слов</h1>
+      <textarea
+        name="text"
+        id="text_field"
+        cols="70"
+        rows="15"
+        placeholder="Введите текст..."
+      ></textarea>
+
+      <div class="menu">
+        <label>
+          <input type="checkbox" name="words" id="words" />
+          Показать количество слов
+        </label>
+
+        <label>
+          <input type="checkbox" name="symbols" id="symbols" />
+          Показать количство символов (включая пробелы)
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="symbols_without_spaces"
+            id="symbols_without_spaces"
+          />
+          Показать количство символов (НЕ включая пробелы)
+        </label>
+
+        <label>
+          <input type="checkbox" name="percent" id="percent" />
+          Показать процентное содержание каждого символа
+        </label>
+      </div>
+
+      <div class="result_msg">
+        <!-- <div class="words_result">Количество слов</div> -->
+        <!-- <div class="symbols_result">Количество символов</div>
+        <div class="symbols_without_spaces_result">Количество символов без пробелов</div>
+        <div class="percent_result">Количество процентов у каждого символа</div> -->
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="calculations.js"></script>
+    <script type="module" src="render.js"></script>
+  </body>
+</html>
